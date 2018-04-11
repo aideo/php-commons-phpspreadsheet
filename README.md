@@ -1,1 +1,2 @@
-# php-commons-phpspreadsheet
+# ideo/commons
+Provides reusable components with small granularity.

@@ -1,0 +1,40 @@
+{
+  "name": "ideo/commons-phpspreadsheet",
+  "description": "Provides reusable components with small granularity.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Kouichi Machida",
+      "email": "k-machida@aideo.co.jp"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^5.6|^7.0",
+    "phpoffice/phpspreadsheet": "^1.0.0",
+    "ideo/commons": "^0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8|^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ideo\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ideo\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": [
+      "php vendor/bin/phpunit"
+    ],
+    "test-quiet": [
+      "php vendor/bin/phpunit -d error_reporting=0"
+    ]
+  }
+}
